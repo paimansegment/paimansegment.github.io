@@ -35,7 +35,13 @@ analytics.page()
       <br><br><br>
       <input name="submit" type="submit" value="submit"/>
       <br><br>
-      </form>   
+      </form>  
+      
+      analytics.track('Clicked Button', {
+  'Email Address': 'string',
+  'User ID': 'string'
+});
+      
         <script type="text/javascript">
                 function identify(e){
                 e.preventDefault();
